@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>JS Example</title>
+      <script type="text/javascript">
+         function sub() {
+         var myval = document.getElementById('mytxt').value;
+         
+         if (myval.length == 0 ){
+          alert('Enter some text');
+          return;
+         }
+         var mytitle = document.getElementById('title');
+         mytitle.innerHTML = myval;
+         }
+      </script>
+   </head>
+   <body>
+      <h1 id="title">JavaScript Example</h1>
+      <input type="text" id="mytxt" />
+      <input type="submit" value="click me" onclick="sub()" />
+   </body>
+</html>
